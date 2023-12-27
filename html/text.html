@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduce</title>
+  <link href="../css/aboutPageStyle.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+	<div class="g-recaptcha" data-sitekey="6LdYOyApAAAAACDZwBa1VwtYD65n--WuQ7GZp9hn"></div>
+  <div id="logoPlaceholder">MeProm</div>
+  <div id="searchContainer">
+    <input type="text" id="search-input" placeholder="搜索..." oninput="updateSearchTerm()">
+    <div id="searchDropdown"></div>
+  </div>
+  <div class="profilePhoto">
+    <img src="AboutPageAssets/images/meprom-big.png" alt="sample" width="260" height="260">
+  </div>
+  <section class="profileHeader">
+    <h1>More-Programming-Mode更多的编程方式&nbsp;&nbsp;</h1>
+    <h3>&nbsp;面对青少年的程序开发</h3>
+    <h3 id="about">&nbsp;支持C++ / Python /Java / net / nodejs /……</h3>
+    <hr>
+    <p>此页面是MeProm的介绍页面</p>
+  </section>
+  <aside class="socialNetworkNavBar">
+    <!-- Add your social network links here -->
+  </aside>
+  <section class="mainContent" id="content" style="display: none;">
+    <section class="section1">
+      <h2 class="sectionTitle">开发人员</h2>
+      <div class="sectionTitleRule">
+        <img src="https://q.qlogo.cn/g?b=qq&nk=2510037056&s=640" alt="sample" width="204" height="204">
+      </div>
+      <hr class="sectionTitleRule2">
+      <div class="section1Content">
+        <p><span>Email :</span> 2510037056@qq.com</p>
+        <p>&nbsp;</p>
+        <p><span>Phone :</span> 158 0831 6178</p>
+        <p>&nbsp;</p>
+        <p><span>Address :</span> Sichuan, China</p>
+        <p>&nbsp;</p>
+      </div>
+    </section>
+    <section class="section1">
+      <h2 class="sectionTitle">开发人员</h2>
+      <div class="sectionTitleRule">
+        <img src="https://q.qlogo.cn/g?b=qq&nk=287389186&s=640" alt="sample" width="204" height="204">
+      </div>
+      <hr class="sectionTitleRule2">
+      <div class="section1Content">
+        <p><span>Email :</span> 287389186@qq.com</p>
+        <p>&nbsp;</p>
+        <p><span>Phone :</span>137 9580 2915</p>
+        <p>&nbsp;</p>
+        <p><span>Address :</span> Sichuan, China</p>
+      </div>
+    </section>
+    <section class="section1">
+      <h2 class="sectionTitle">开发人员</h2>
+      <div class="sectionTitleRule">
+        <img src="https://q.qlogo.cn/g?b=qq&nk=1022162935&s=640" alt="sample" width="204" height="204">
+      </div>
+      <hr class="sectionTitleRule2">
+      <div class="section1Content">
+        <p><span>Email :</span> 1022162935@qq.com </p>
+        <p>&nbsp;</p>
+        <p><span>Phone :</span> 182 8311 3017</p>
+        <p>&nbsp;</p>
+        <p><span>Address :</span> Sichuan, China</p>
+      </div>
+    </section>
+    <section class="section2">
+      <h2 class="sectionTitle">Content Holder 2</h2>
+      <hr class="sectionTitleRule">
+      <hr class="sectionTitleRule2">
+      <article class="section2Content">
+        <h2 class="sectionContentTitle">Title & Company?</h2>
+        <h3 class="sectionContentSubTitle">2023 11-22</h3>
+        <p class="sectionContent">一个开源的项目，我们会不断的更新下去，计划如下：3年完成各种语言的介绍，3年完成客户端，再去备案</p>
+      </article>
+    </section>
+    <aside class="externalResourcesNav">
+      <div class="externalResources">
+        <a href="#" title="Download CV Link">DOWNLOAD CV</a>
+      </div>
+      <span class="stretch"></span>
+      <div class="externalResources">
+        <a href="#" title="Behance Link">BEHANCE</a>
+      </div>
+      <span class="stretch"></span>
+      <div class="externalResources">
+        <a href="https://github.com/What-Is-Qt/MeProm" title="Github Link">GITHUB</a>
+      </div>
+    </aside>
+  </section>
+  <footer>
+    <hr>
+    <p class="footerDisclaimer">暂未备案<span></span></p>
+    <p class="footerNote">盼のHacker - 杨<span>Email me</span></p>
+  </footer>
+
+  <script>
+    function recaptchaCallback() {
+      // 当用户点击 reCAPTCHA 复选框时，显示页面内容
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+</body>
+</html>

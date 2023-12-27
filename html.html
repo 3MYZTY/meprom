@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script> function myFunc() { var winHeight=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; if (parseInt(winHeight)<750){ document.getElementById("footer").setAttribute("class", "dAdjustTop"); /*document.getElementById("inputtext").value=winHeight+" "+document.getElementById("footer").getAttribute("class");*/ } else { document.getElementById("footer").setAttribute("class", "dAdjustButtom"); /*document.getElementById("inputtext").value=winHeight+" "+document.getElementById("footer").getAttribute("class");*/ } } </script>
+	<link href="aboutPageStyle.css" rel="stylesheet" type="text/css">
+	<style>
+		form {
+			position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		main {
+			flex: 1;
+		}
+	    body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+			background-color: rgba(181,178,178,0.50);
+			
+        }
+
+        footer {
+			text-align: center;
+            padding: 7px;
+            display: flex;
+			font-size: 14px;
+			border-top: 5px solid rgba(181,178,178,1.00);
+            justify-content: space-around;    
+        }
+		a {
+            text-decoration: none; /* 去除下划线 */
+            color:rgba(104,103,103,1.00) /* 继承父元素的文字颜色，保持与周围文本一致 */
+        }
+	</style>
+</head>
+
+<body>
+	<form>小孩子怎么能乱连网络呢		
+		<ol>
+			<li>
+				<a href="http://61.135.169.125/">Baidu</a>
+			</li>
+			<li>
+				<a href="http://20.205.243.166/">github</a>
+			</li>
+			<li>
+				<a href="http://20.205.243.166/">github</a>
+			</li>
+		</ol>其他的自己查询哟，给你讲个好消息，baidu可以直接访问</form>
+	<main></main>
+	<footer>
+    		<p class="footerDisclaimer">暂未备案<span></span></p>
+			<a href="https://github.com/What-Is-Qt/MeProm" target="_blank"><img src="css/photo/github-mark.png" height="50px" width="50px"></a>
+			<p class="footerNote">盼のHacker - 2510037056<span>  <a href="https://www.baidu.com/s?wd=qq%E9%82%AE%E7%AE%B1" target="_blank">Email me</a></span></p>
+	</footer>
+</body>
+</html>
+
+	
+   
