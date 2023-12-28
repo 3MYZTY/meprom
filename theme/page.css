@@ -1,0 +1,193 @@
+#searchContainer {
+     position: relative;
+     width: 300px; /* Adjust the width as needed */
+     margin: 20px;
+}
+
+#search-input {
+     width: calc(100% - 20px); /* 20px 是 padding 的总和，确保和色块一致 */
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+#searchDropdown {
+	display: flex;
+	flex-direction: column;
+    align-items: stretch;
+    height: auto; /* 设置高度为自动，根据内容自适应 */
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(2,2,2,0.5);
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    display: none; /* Hide the dropdown by default */
+}
+
+#searchDropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+#searchDropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+#search-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#search-dropdown a:hover {
+    background-color: #f2f2f2;
+}
+#search-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#search-prefix {
+    width: 10px;
+    height: 100%;
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
+
+#search-input,#search-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus,
+#search-dropdown:focus {
+    border-color: #4CAF50;
+}
+
+/*以上是搜索框的css代码*/
+
+#logoPlaceholder {
+	background-color: rgba(208,207,207,1.00);
+	width: 200px;
+	text-align: center;
+}
+
+
+
+#logoPlaceholder {
+	width: 200px;
+	font-family: "JetBrains Mono Medium";
+	color: rgba(255,255,255,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 53px;
+}
+
+/*以上是标题的css代码*/
+
+
+
+footer {
+	text-align: center;
+    padding: 7px;
+    display: flex;
+	font-size: 14px;
+	border-top: 5px solid rgba(181,178,178,1.00);
+    justify-content: space-around;    
+        }
+a {
+    text-decoration: none; /* 去除下划线 */
+    color:rgba(104,103,103,1.00) /* 继承父元素的文字颜色，保持与周围文本一致 */
+}
+
+
+/* 定义关键词的颜色 */
+        .keyword {
+            color: #4286F3;
+        }
+
+        /* 定义标识符的颜色 */
+        .identifier {
+            color: #4286F3;
+        }
+
+        /* 定义注释的颜色 */
+        .comment {
+            color: gray;
+        }
+
+        /* 定义字符串的颜色 */
+        .string {
+            color: brown;
+        }
+
+        /* 定义数字的颜色 */
+        .number {
+            color: purple;
+        }
+
+        /* 定义代码框样式 */
+        
+body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            position: relative; /* 使下面的绝对定位相对于 main 元素 */
+        }
+
+        pre {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: "JetBrains Mono Medium";
+            display: inline-block;
+        }
+
+        #searchContainer {
+            position: relative; /* 使下面的绝对定位相对于 searchContainer 元素 */
+        }
+
+        #searchDropdown {
+            position: absolute;
+            top: 100%; /* 距离搜索框底部的距离 */
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: none; /* 初始隐藏 */
+        }
+
+        #search-input:focus + #searchDropdown {
+            display: block; /* 当搜索框获取焦点时显示 */
+        }
+        

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduce</title>
+<link href="page.css" rel="stylesheet" type="text/css">
+<style>
+
+</style>
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script src="index.js"></script>
+</head>
+<body>
+	<main>
+<div id="logoPlaceholder">MeProm模板</div>
+<div id="searchContainer">
+        <input type="text" id="search-input" placeholder="搜索114514..." oninput="updateSearchTerm()">
+	    <div id="searchDropdown">
+			
+</div>
+	<pre id="codeInput2">
+
+	</pre>
+	<pre id="codeInput1">
+
+	</pre>
+	<pre id="codeInput3">
+
+	</pre>
+
+	</main>
+<footer id="footer">
+    	<p class="footerDisclaimer">暂未备案<span></span></p>
+		<a href="https://github.com/What-Is-Qt/MeProm" target="_blank"><img src="github-mark.png" height="50px" width="50px"></a>
+		<p class="footerNote">盼のHacker - 2510037056<span>  <a href="https://www.baidu.com/s?wd=qq%E9%82%AE%E7%AE%B1" target="_blank">Email me</a></span></p>
+</footer>
+	
+
+</body>
+	
+	<script>
+jscolor(`function jscolor(code, codeInput) {
+    const identifierList = ['function', 'let', 'var', 'const', 'if', 'else', 'for', 'while'];//这是需要设置的关键字
+
+    // 匹配标识符的正则表达式
+    const identifierRegex = new RegExp('\\b(' + identifierList.join('|') + ')\\b', 'g');
+
+
+    // 使用正则表达式替换文本框中的标识符并添加对应的类
+    const jsCode = code.replace(identifierRegex, '<span class="identifier">$1</span>')
+                                .replace(identifierRegex1, '<span class="comment">$1</span>')
+                                .replace(identifierRegex2, '<span class="number">$1</span>');
+
+    console.log(jsCode);
+
+    // 获取元素时，使用 document.getElementById
+    const x = document.getElementById(codeInput);
+    x.innerHTML = jsCode;
+}`,"codeInput2")
+htmlcolor(`<div id="logoPlaceholder">MeProm模板</div>
+<div id="searchContainer">
+        <input type="text" id="search-input" placeholder="搜索114514..." oninput="updateSearchTerm()">
+	    <div id="searchDropdown">
+<</div>`,"codeInput1")
+jscolor(`function matchText(inputText, list) {
+    const matchedItems = [];
+	
+    if (!inputText.length == 0) {
+        for (let i = 0; i < list.length; i++) {
+            // 检查字段是否存在，然后再使用 includes 方法
+            if (list[i][0] && list[i][0].includes(inputText) ||
+                list[i][2] && list[i][2].includes(inputText)) {
+                matchedItems.push({
+                    name: list[i][0],          // 名字
+                    website: list[i][1],       // 对应网站
+                    description: list[i][2]    // 描述
+                });
+            }
+        }
+    }
+	console.log()
+	updateDropdown(matchedItems)
+    return matchedItems;
+}
+
+
+
+
+function updateDropdown(filteredItems) {
+    searchDropdown.innerHTML = '';
+
+    if (filteredItems.length > 0) {
+        filteredItems.forEach(item => {
+            const option = document.createElement('a');
+            option.innerHTML = `+"<strong>${item.name}</strong> - ${item.description} <br>"+`; // 显示名字和描述
+            option.href = item.website;    // 设置链接为对应网站
+            option.addEventListener('click', function () {
+                searchInput.value = item.name;
+                searchDropdown.style.display = 'none';
+            });
+            searchDropdown.appendChild(option);
+        });
+
+        searchDropdown.style.display = 'block';
+    } else {
+        searchDropdown.style.display = 'none';
+    }
+}
+
+const searchContainer = document.getElementById('searchcontainer');
+
+document.addEventListener('click', function (event) {
+    if (!searchContainer.contains(event.target)) {
+        searchDropdown.style.display = 'none';
+    }
+});`,"codeInput3")</script>
+</html>
